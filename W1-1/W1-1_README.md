@@ -32,7 +32,7 @@ sol_code:[Storage.sol](/W1-1/DATA/remix_sol/Storage.sol)
 
 ## 使用Truffle
 hash:[0xB899BD2C47390ACBD7A365FCB153B757A69EA8A8952DDD076AD7CF2E98AA7712](https://www.oklink.com/zh-cn/oec-test/tx/0xB899BD2C47390ACBD7A365FCB153B757A69EA8A8952DDD076AD7CF2E98AA7712)  
-sol_code:[Couter.sol](/W1-1/DATA/metacoin-box/Couter.sol)  
+sol_code:[Couter.sol](/W1-1/DATA/metacoin-box/contracts/Couter.sol)  
 ![truffle-log](/W1-1/DATA/picture/truffle.png)  
 
 ## 编写一个测试用例
