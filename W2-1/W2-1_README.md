@@ -16,16 +16,15 @@
 * [编写Bank合约withdraw(),实现提取出所有的ETH](#编写Bank合约withdraw(),实现提取出所有的ETH) 
 
 ## 编写⼀个Bank合约
-hash:[B29561B40248CB5C069FA51E31B5BEC2C6E7D15D13FEDF1E7712D91D1AD36A40](https://www.oklink.com/zh-cn/oec-test/tx/0B29561B40248CB5C069FA51E31B5BEC2C6E7D15D13FEDF1E7712D91D1AD36A40)  
-sol_code:[Counter.sol](/W1-2/DATA/HARDHAT/contracts/Counter.sol)  
-![Counter-version2](/W1-2/DATA/picture/Counter-version2.png)  
+hash:[DBAB5766B042A56F2C996AE57B224F39B78D61B8266691CE08DC0D38926C5E39](https://www.oklink.com/zh-cn/oec-test/tx/DBAB5766B042A56F2C996AE57B224F39B78D61B8266691CE08DC0D38926C5E39)  
+sol_code:[Bank.sol](/W2-1/DATA/Bank/Bank.sol)  
+![Bank](/W2-1/DATA/picture/Bank.png)  
 
 ## 通过Metamask向Bank合约转账ETH
-js_code:[counter-test.js](/W1-2/DATA/HARDHAT/test/counter-test.js)  
-![Counter-test2-log](/W1-2/DATA/picture/Counter-test2.png)  
-
 ## 在Bank合约记录每个地址转账⾦额
-js_code:[count-test.js](/W1-2/DATA/HARDHAT/task/counter.js)  
-![count-test-log](/W1-2/DATA/picture/count-test.png)  
+hash:[AF45B7B9A4183F72691F963091A7FC461008CF223A9D6F762270686DA98F3189](https://www.oklink.com/zh-cn/oec-test/tx/AF45B7B9A4183F72691F963091A7FC461008CF223A9D6F762270686DA98F3189)  
+![Deposit](/W2-1/DATA/picture/Deposit.png)  
 
 ## 编写Bank合约withdraw(),实现提取出所有的ETH
+hash:[0C2A873B6952DF74868A1EEA3B7536BE40A49A25CA810B911FCAC5456CD1353D](https://www.oklink.com/zh-cn/oec-test/tx/0C2A873B6952DF74868A1EEA3B7536BE40A49A25CA810B911FCAC5456CD1353D)  
+![withdraw](/W2-1/DATA/picture/withdraw.png)  
