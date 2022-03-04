@@ -11,8 +11,8 @@
 
 ## 目录
 * [编写合约Score](#编写合约Score) 
-    * [仅有⽼师]
-    * [分数不可以⼤于100]
+    * 仅有⽼师
+    * 分数不可以⼤于100
 * [编写合约Teacher](#编写合约Teacher) 
 
 ## 编写合约Score
@@ -35,5 +35,14 @@ function set_score(address _student,uint8 _score)external onlyTeacher{
 ```
 
 ## 编写合约Teacher
-hash:[0C2A873B6952DF74868A1EEA3B7536BE40A49A25CA810B911FCAC5456CD1353D](https://www.oklink.com/zh-cn/oec-test/tx/0C2A873B6952DF74868A1EEA3B7536BE40A49A25CA810B911FCAC5456CD1353D)  
-![withdraw](/W2-2/DATA/picture/withdraw.png)  
+```solidity
+contract Teacher {
+    Score public this_Score;
+    constructor(){
+        this_Score = new Score();
+    }
+    function T_Iset_score(address _score_add,address _student,uint8 _score)external{
+        IScore(_score_add).set_score(_student,_score);
+    }
+}
+```
