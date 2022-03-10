@@ -1,5 +1,6 @@
 const { artifacts, network } = require("hardhat");
 const hre = require("hardhat");
+// const {writeAbiAddr} =require(./artifact_saver.js);
 
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
@@ -17,7 +18,8 @@ async function main() {
 
 
   let Artifact = await artifacts.readArtifact("Counter");
-  await writeAbiaddr(Artifact,counter.address,"Counter",network.name);
+  console.log("data:", Artifact,counter.address,"Counter",network.name);
+  // await writeAbiaddr(Artifact,counter.address,"Counter",network.name);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
