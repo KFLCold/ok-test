@@ -14,12 +14,12 @@
 
 ## 目录
 * [发⾏⼀个ERC20Token：](#发⾏⼀个ERC20Token：)
-  * [可动态增发](#可动态增发)
-  * [通过ethers.js.调⽤合约进⾏转账](#通过ethers.js.调⽤合约进⾏转账)
-* [编写⼀个Vault合约：](#编写⼀个Vault合约：) 
-  * [编写deposite⽅法](#编写deposite⽅法)
-  * [编写withdraw⽅法](#编写withdraw⽅法)
-  * [前端显示⽤户存款⾦额](#前端显示⽤户存款⾦额)
+    * [可动态增发](#可动态增发)
+    * [通过ethers.js.调⽤合约进⾏转账](#通过ethers.js.调⽤合约进⾏转账)
+* [编写⼀个Vault合约](#编写⼀个Vault合约) 
+    * [编写deposite⽅法](#编写deposite⽅法)
+    * [编写withdraw⽅法](#编写withdraw⽅法)
+    * [前端显示⽤户存款⾦额](#前端显示⽤户存款⾦额)
 
 ## 发⾏⼀个ERC20Token：
 hash:[3922FE276E01E84E44616A1343FCE16ED8C602180F258141B4E2B4088F838B8D](https://www.oklink.com/zh-cn/oec-test/tx/3922FE276E01E84E44616A1343FCE16ED8C602180F258141B4E2B4088F838B8D)  
@@ -56,7 +56,7 @@ async function main() {
 }
 ```
 
-## 编写⼀个Vault合约：
+## 编写⼀个Vault合约
 hash:[F17551AE1AD6A7CD69A81E0E865EA9B350F32EA4C8A5911C39A5A0CB6EA205CA](https://www.oklink.com/zh-cn/oec-test/tx/F17551AE1AD6A7CD69A81E0E865EA9B350F32EA4C8A5911C39A5A0CB6EA205CA)  
 sol_code:[Vault.sol](/W3-1/DATA/w3_code/contracts/Vault.sol)  
 ![Vault](/W3-1/DATA/picture/Vault.png)  
