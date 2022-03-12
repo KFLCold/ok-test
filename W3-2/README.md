@@ -17,7 +17,7 @@ sol_code:[MyERC721.sol](/W3-2/DATA/code/contracts/MyERC721.sol)
 ## 使用ether.js解析ERC721转账事件
 hash:[4377C769C6141EF50961DE57D854A5A7C87499F8936B4D4F4C4732826930FC77](https://www.oklink.com/zh-cn/oec-test/tx/4377C769C6141EF50961DE57D854A5A7C87499F8936B4D4F4C4732826930FC77)  
 js_code:[listen_event.js](/W3-2/DATA/code/scripts/listen_event.js)  
-![listen_event](/W3-1/DATA/picture/listen_event.png)  
+![listen_event](/W3-2/DATA/picture/listen_event.png)  
 ### 记录到数据库中
 ```JavaScript
 const mysql = require("mysql");
@@ -32,6 +32,6 @@ conn.query("INSERT INTO erc721_Adeceitz(blockNumber,transactionHash,fromadd,toad
 });
 conn.end();
 ```
-![SQL](/W3-1/DATA/picture/SQL.png)  
+![SQL](/W3-2/DATA/picture/SQL.png)  
 
 ## 使用TheGraph解析ERC721转账事件
