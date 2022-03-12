@@ -1,30 +1,37 @@
-# W2_1作业：
-* 编写⼀个Bank合约：
-* 通过Metamask向Bank合约转账ETH
-* 在Bank合约记录每个地址转账⾦额
-* 编写Bank合约withdraw(),实现提取出所有的ETH
-
-作业要求：
-1. 使用自己的 github 创建一个作业代码库
-2. 每一次作业使用一个文件夹(w1) 
-3. 提交代码、截图、交易 hash 等
+# W3_2作业
+* 发行一个ERC721Token
+   * 使用ether.js解析ERC721转账事件(加分项：记录到数据库中，可方便查询用户持有的所有NFT)
+   * (或)使用TheGraph解析ERC721转账事件
 
 ## 目录
-* [编写⼀个Bank合约](#编写⼀个Bank合约) 
-* [通过Metamask向Bank合约转账ETH](#通过Metamask向Bank合约转账ETH) 
-* [在Bank合约记录每个地址转账⾦额](#在Bank合约记录每个地址转账⾦额) 
-* [编写Bank合约withdraw(),实现提取出所有的ETH](#编写Bank合约withdraw(),实现提取出所有的ETH) 
+* [发行一个ERC721Token](#发行一个ERC721Token) 
+    * [使用ether.js解析ERC721转账事件](#使用ether.js解析ERC721转账事件) 
+        * [记录到数据库中](#记录到数据库中) 
+    * [使用TheGraph解析ERC721转账事件](#使用TheGraph解析ERC721转账事件) 
 
-## 编写⼀个Bank合约
-hash:[DBAB5766B042A56F2C996AE57B224F39B78D61B8266691CE08DC0D38926C5E39](https://www.oklink.com/zh-cn/oec-test/tx/DBAB5766B042A56F2C996AE57B224F39B78D61B8266691CE08DC0D38926C5E39)  
-sol_code:[Bank.sol](/W2-1/DATA/Bank/Bank.sol)  
-![Bank](/W2-1/DATA/picture/Bank.png)  
+## 发行一个ERC721Token
+hash:[D9884866D9882264EF6C85802C4E9BD368681242F6DFA5A7AB47469C8FDF7D0D](https://www.oklink.com/zh-cn/oec-test/tx/D9884866D9882264EF6C85802C4E9BD368681242F6DFA5A7AB47469C8FDF7D0D)  
+sol_code:[MyERC721.sol](/W3-2/DATA/code/contracts/MyERC721.sol)  
+![MyERC721](/W3-2/DATA/picture/MyERC721.png)  
 
-## 通过Metamask向Bank合约转账ETH
-## 在Bank合约记录每个地址转账⾦额
-hash:[AF45B7B9A4183F72691F963091A7FC461008CF223A9D6F762270686DA98F3189](https://www.oklink.com/zh-cn/oec-test/tx/AF45B7B9A4183F72691F963091A7FC461008CF223A9D6F762270686DA98F3189)  
-![Deposit](/W2-1/DATA/picture/Deposit.png)  
+## 使用ether.js解析ERC721转账事件
+hash:[4377C769C6141EF50961DE57D854A5A7C87499F8936B4D4F4C4732826930FC77](https://www.oklink.com/zh-cn/oec-test/tx/4377C769C6141EF50961DE57D854A5A7C87499F8936B4D4F4C4732826930FC77) 
+js_code:[listen_event.js](/W3-2/DATA/code/scripts/listen_event.js)  
+![listen_event](/W3-1/DATA/picture/listen_event.png)  
+### 记录到数据库中
+```JavaScript
+const mysql = require("mysql");
+const conn = mysql.createConnection(require("/home/learn/secret/W3-2/online-mysql.json"));
+conn.connect();
+conn.query("INSERT INTO erc721_Adeceitz(blockNumber,transactionHash,fromadd,toadd,tokenid) VALUES(?,?,?,?,?)"
+,[event.blockNumber,event.transactionHash,decodedData.args.from,decodedData.args.to,decodedData.args.tokenId.toString()], function (err, result) {
+    if (err) {
+        console.log('[INSERT ERROR] - ', err.message);
+        return;
+    }
+});
+conn.end();
+```
+![sql](/W3-1/DATA/picture/sql.png)  
 
-## 编写Bank合约withdraw(),实现提取出所有的ETH
-hash:[0C2A873B6952DF74868A1EEA3B7536BE40A49A25CA810B911FCAC5456CD1353D](https://www.oklink.com/zh-cn/oec-test/tx/0C2A873B6952DF74868A1EEA3B7536BE40A49A25CA810B911FCAC5456CD1353D)  
-![withdraw](/W2-1/DATA/picture/withdraw.png)  
+## 使用TheGraph解析ERC721转账事件
