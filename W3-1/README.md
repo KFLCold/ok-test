@@ -13,15 +13,15 @@
 3. 提交代码、截图、交易 hash 等
 
 ## 目录
-* [发⾏⼀个ERC20Token：](#发⾏⼀个ERC20Token：)
+* [发⾏⼀个ERC20Token](#发⾏⼀个ERC20Token)
     * [可动态增发](#可动态增发)
-    * [通过ethers.js.调⽤合约进⾏转账](#通过ethers.js.调⽤合约进⾏转账)
+    * [通过ethers.js调⽤合约进⾏转账](#通过ethers.js调⽤合约进⾏转账)
 * [编写⼀个Vault合约](#编写⼀个Vault合约) 
     * [编写deposite⽅法](#编写deposite⽅法)
     * [编写withdraw⽅法](#编写withdraw⽅法)
     * [前端显示⽤户存款⾦额](#前端显示⽤户存款⾦额)
 
-## 发⾏⼀个ERC20Token：
+## 发⾏⼀个ERC20Token
 hash:[3922FE276E01E84E44616A1343FCE16ED8C602180F258141B4E2B4088F838B8D](https://www.oklink.com/zh-cn/oec-test/tx/3922FE276E01E84E44616A1343FCE16ED8C602180F258141B4E2B4088F838B8D)  
 sol_code:[MyERC20.sol](/W3-1/DATA/w3_code/contracts/ERC2612.sol)  
 ![MyERC20](/W3-1/DATA/picture/ERC2612.png)  
@@ -37,7 +37,7 @@ contract ERC2612 is ERC20,ERC20Permit {
     }
 }
 ```
-### 通过ethers.js.调⽤合约进⾏转账
+### 通过ethers.js调⽤合约进⾏转账
 hash:[0F3C2BF90616767557543FD54438BF3AD1B115A3A0969D6B820C65FAC850FCA6](https://www.oklink.com/zh-cn/oec-test/tx/0F3C2BF90616767557543FD54438BF3AD1B115A3A0969D6B820C65FAC850FCA6)  
 js_code:[oktest_ethers_transfer.js](/W3-1/DATA/w3_code/scripts/oktest_ethers_transfer.js)  
 ![ethers_transfer](/W3-1/DATA/picture/ethers_transfer.png)  
