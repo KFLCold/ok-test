@@ -16,13 +16,13 @@ async function main() {
 }
 
 main()
-    .then(() => process.exit(0))
-    .catch(error => {
-        console.error(error);
-        process.exit(1);
-    });
+.then(() => process.exit(0))
+.catch(error => {
+    console.error(error);
+    process.exit(1);
+});
 
 
-  // duration = 60;
-  // await delay.advanceTime(ethers.provider, duration); 
-  // await delay.advanceBlock(ethers.provider);
+//   duration = 60;
+//   await delay.advanceTime(ethers.provider, duration);
+//   await delay.advanceBlock(ethers.provider);
