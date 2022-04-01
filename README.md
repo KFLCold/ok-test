@@ -1,8 +1,8 @@
 # ok-test
 just ok-test task
 
-<!-- [W5-2](https://github.com/ZWJKFLC/ok-test/tree/main/W5-2/)  
-[W5-1](https://github.com/ZWJKFLC/ok-test/tree/main/W5-1/)   -->
+[W5-2](https://github.com/ZWJKFLC/ok-test/tree/main/W5-2/)  
+[W5-1](https://github.com/ZWJKFLC/ok-test/tree/main/W5-1/)  
 [W4-2](https://github.com/ZWJKFLC/ok-test/tree/main/W4-2/)  
 [W4-1](https://github.com/ZWJKFLC/ok-test/tree/main/W4-1/)  
 [W3-2](https://github.com/ZWJKFLC/ok-test/tree/main/W3-2/)  
