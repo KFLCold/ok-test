@@ -19,7 +19,7 @@
 
 ## 设计一个看涨期权Token
 hash:[0B4B04B89A9CDBA3979C9ADFC81B789959D0471931C920624E9F7040F14F98BB](https://www.oklink.com/zh-cn/oec-test/tx/0B4B04B89A9CDBA3979C9ADFC81B789959D0471931C920624E9F7040F14F98BB)  
-sol_code:[OptToken_To_ETH.sol](/W6-1/DATA/Bank/OptToken_To_ETH.sol)  
+sol_code:[OptToken_To_ETH.sol](/W6-1/DATA/sol/OptToken_To_ETH.sol)  
 ### 创建期权Token
 确认标的的价格与行权日期
 ```solidity
