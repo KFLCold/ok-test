@@ -5,7 +5,7 @@ require("@nomiclabs/hardhat-etherscan");
 require('hardhat-abi-exporter');
 // require("./task/counter.js");
 const fs = require('fs');
-const mnemonic =fs.readFileSync("/home/learn/.secret").toString().trim();
+const mnemonic =fs.readFileSync("/home/ubuntu/zwj-learn/.secret").toString().trim();
 const infrakey='';
 const scankey='';
 
@@ -29,7 +29,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   solidity:{
     compilers:[
       {
-        version: "0.8.4",
+        version: "0.8.7",
         setting:{
           optimizer:{
             enable:true,
@@ -57,11 +57,27 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
       accounts:{
         mnemonic:mnemonic,
       },
+    },
+    ropsten:{
+      url:"https://ropsten.infura.io/v3/8cccc98026714be18a4052434bb4ae77",
+      chainId:3,
+      accounts:{
+        mnemonic:mnemonic,
+      },
+    },
+    mumbai:{
+      url:"https://matic-mumbai.chainstacklabs.com",
+      chainId:80001,
+      accounts:{
+        mnemonic:mnemonic,
+      },
     }
   },
   etherscan:{
     apiKey:{
-      bscTestnet: 'AXUTCF27F9PY5VJHE25J6Q4HB6DIG9DQWH'
+      bscTestnet: 'AXUTCF27F9PY5VJHE25J6Q4HB6DIG9DQWH',
+      ropsten:"7B8S6DPCHKEE5FGWX9JPR7Z9KNB44Q9CIS",
+      polygonMumbai:"3CSJBYTBG52PFVXN4EX4JBIH5YY4X5SHEH"
     }
   }
 };
