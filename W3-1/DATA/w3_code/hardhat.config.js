@@ -29,8 +29,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   solidity:{
     compilers:[
       {
-        version: "0.8.7",
-        setting:{
+        version: "0.8.15",
+        settings:{
           optimizer:{
             enable:true,
             runs:200

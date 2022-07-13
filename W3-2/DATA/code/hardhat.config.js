@@ -30,7 +30,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     compilers:[
       {
         version: "0.8.4",
-        setting:{
+        settings:{
           optimizer:{
             enable:true,
             runs:200

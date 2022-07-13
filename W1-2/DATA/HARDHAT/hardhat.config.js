@@ -30,7 +30,7 @@ module.exports = {
     compilers:[
       {
         version: "0.8.4",
-        setting:{
+        settings:{
           optimizer:{
             enable:true,
             runs:200
